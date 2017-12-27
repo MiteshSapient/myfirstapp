@@ -1,0 +1,13 @@
+@* home Template File *@
+@(users: List[User])
+
+<html>
+	<body>
+		<h1>User Data</h1>
+		@for(user <- users){
+			<li>@user.getFirstName()</li>	
+		}
+		<a href="@routes.Application.blank()">Go to Signup.</a>
+			
+	</body>
+</html>
